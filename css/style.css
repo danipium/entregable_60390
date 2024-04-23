@@ -1,0 +1,128 @@
+
+
+background {
+background-color: #f4f4f4;
+}
+
+/* estilos de header */
+
+header{
+align-items: center ;
+flex-direction: row ;
+}
+
+#banner {
+width: 100%;
+}
+
+#logo {
+width: 8% ;
+padding-top: 24px;
+padding-left: 16px;
+}
+
+/* estilos menu */
+
+header nav ul li{
+list-style: none;
+color: #2D2D2D;
+font-family: "Roboto", sans-serif;
+font-weight: 400;
+font-size: 18px;
+text-decoration: none;
+float: right;
+padding-bottom: 16px;
+padding-right: 24px;
+margin-left: 32px;
+}
+
+header nav ul li a{
+color: #2D2D2D;
+text-decoration: none;
+}
+
+/* estilos contenido */
+
+main{
+text-align: left;
+padding: 56px;
+}
+
+h1{
+color: #2D2D2D;
+font-family: "Roboto", sans-serif;
+font-weight: 800;
+font-size: 32px;
+}
+
+h2{
+color: #2D2D2D;
+font-family: "Roboto", sans-serif;
+font-weight: 500;
+font-size: 24px;    
+}
+
+h3{
+color: #2D2D2D;
+font-family: "Roboto", sans-serif;
+font-weight: 400;
+font-size: 18px;    
+}
+
+p{
+color: #2D2D2D;
+font-family: "Roboto", sans-serif;
+font-weight: 300;
+font-size: 16px; 
+}
+
+footer{
+background-color: #0F3D33;
+text-align: center;
+}
+
+/* estilos atajos */
+
+section li{
+list-style: none;
+padding: 56px;
+align-items: center ;
+display: inline-block;
+text-align: center;
+text-overflow: clip;
+}
+
+section li img{
+width: 35%;
+}
+
+/* estilos botones */
+
+button{
+color: #FFFF;
+background-color: #D8742A;
+border: none;
+font-family:"Roboto", sans-serif;
+font-size: 18px;
+font-weight: 900px;
+height: 40px;
+width: 100px;
+border-radius: 8px;
+}
+
+/* estilos noticia */
+
+#noticia{
+width: 30%;
+}
+
+/* estilos footer */
+
+.blanco {
+color: #FFFF;
+}
+
+.contacto{
+color: #FFFF;
+font-weight: 700px;
+}
