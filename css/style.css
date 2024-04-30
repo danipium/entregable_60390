@@ -1,4 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
+}
 
 /* estilos de header */
 
@@ -6,12 +11,12 @@ header{
 display: flex;
 justify-content: space-between;
 align-items: center;
+
 }
 
-.logo {
-width: 10% ;
-margin: 16px;
-
+header img {
+max-width: 15%;
+margin: 16px ;
 }
 
 /* estilos menu */
@@ -20,7 +25,7 @@ header nav ul {
 display: flex;
 justify-content: right;
 gap: 16px;
-margin-right: 24px;
+margin: 24px;
 }
 
 header nav ul li{
@@ -41,19 +46,21 @@ text-decoration: none;
 
 .banner {
 width: 100%;
+object-fit: cover;
 }
 
 main{
 background-color: beige;
 text-align: left;
+flex-wrap: wrap;
 }
 
 .somos{
 display: flex;
-padding: 24px;
-flex-wrap: wrap;
+padding: 56px ;
 gap: 32px;
-justify-content: center;
+align-items: center;
+
 }
 
 .somos p span{
@@ -63,44 +70,67 @@ display: block;
 
 /* estilos atajos */
 
-.atajo {
+.atajos {
 list-style: none;
 text-align: center;
 background-color: #F7E3E3;
-display: flex;
-padding: 32px 24px;
-flex-wrap: wrap;
-gap: 56px;
-justify-content: center;
+padding: 48px 0px 16px 0px;
+display: grid;
+grid-template-columns: 1, 1fr;
+grid-gap: 20px;
+
+
+}
+
+.atajos li {
+margin-bottom: 32px;
 }
 
 .atajos p span{
 display: block;
 }
 
-section li img{
-width: 200px;
+.atajos img{
+max-width: 20%;
+min-width: 250px;
+}
+
+
+section li .mascota_2, section li .mascota_4 {
+display: none;
 }
 
 
 /* estilos noticias */
 
-.noticias {
-text-align: left;
-justify-content: center;
-display: flex;
+.img{
+height: 40vh;
+width: auto;
+overflow: hidden;
 
 }
 
-.noticiaimg{
-width: 300px;
+
+.noticias .info {
+flex-direction: column;
+margin: 24px 24px 48px;
+    
+}
+
+.noticias .info h2, h3, p {
+    margin-bottom: 16px;
+}
+
+.noticias .info span {
+    display: block;
 }
 
 .italic {
 font-style: oblique;
 font-size: 12px;
-line-height: 5%;
+line-height: 120%;
 }
+
 
 /* estilos footer */
 
@@ -113,18 +143,19 @@ padding-bottom: 16px;
     
 .footerwhite {
 color: #FFFF;
-line-height: 50%;
+line-height: 120%;
 }
     
 .footerbold {
 color: #FFFF;
 font-weight: 800;
-line-height: 20%;
+line-height: 120%;
 }
     
 .c {
 color: #FFFF;
 font-size: 12px;
+margin-top: 16px;
 }
 
 /* estilos botones */
@@ -136,6 +167,7 @@ border: none;
 font-family:"Roboto", sans-serif;
 font-size: 16px;
 font-weight: 900px;
+margin: 16px;
 height: 32px;
 width: 90px;
 border-radius: 4px;
@@ -157,7 +189,7 @@ color: #2D2D2D;
 font-family: "Roboto", sans-serif;
 font-weight: 500;
 font-size: 24px;   
-line-height: 100%;
+line-height: 120%;
 }
     
 h3{
@@ -165,13 +197,57 @@ color: #2D2D2D;
 font-family: "Roboto", sans-serif;
 font-weight: 400;
 font-size: 18px;  
-line-height: 80%;  
+line-height: 120%;  
 }
     
 p{
 color: #2D2D2D;
 font-family: "Roboto", sans-serif;
 font-weight: 300;
-font-size: 14px; 
-line-height: 150%;
+font-size: 16px; 
+line-height: 120%;
+}
+
+
+/* mq tablet */
+
+@media screen and (min-width: 600px) {
+
+    section li .mascota_2 {
+        display: block;
+       }
+
+    .atajos {
+ 
+    grid-template-columns: repeat (3,1fr);
+    grid-template-rows: repeat (2, 50%);
+  
+    }
+
+    .atajos .mascota_1, .mascota_2 {
+        grid-column; span 2;
+    }
+
+    .atajos .mascota_3, .mascota_4 {
+        grid-row: span 2;
+    }
+
+
+
+}
+
+
+@media screen and (min-width: 1024px) {
+    section li .mascota_2, section li .mascota_4 {
+    display: block;
+   }
+
+   .atajos {
+    grid-template-columns: repeat (4, 1fr);
+    grid-template-rows: 30%;
+    }
+
+
+
+
 }
