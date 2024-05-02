@@ -3,32 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donde la Mery / Donacion</title>
 
-    <!-- Link de mi css-->
-<link rel="stylesheet" href="../css/style.css">
 
+    <!-- Link de bt -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <title>Donaciones</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
-<body>
- <!--Etiqueta para banner principal-->
- <header>
 
-    <!--Etiqueta para el menu de navegacion-->
-    <nav>
-    <!--Lista desordenada-->
-    <ul>
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="../pages/nosotros.html">Nosotros</a></li>
-        <li><a href="../pages/unete.html">Únete</a></li>
-        <li><a href="../pages/donacion.html">Donación</a></li>
-        <li><a href="../pages/adopcion.html">Adopción</a></li>
-        <li><a href="../pages/contacto.html">Contacto</a></li>
-    </ul>
-   
-    </nav>
+<body class="donacion">
 
-    <!--Etiqueta para img-->
-    <img src="../img/Captura de pantalla 2024-04-15 a la(s) 00.32.29.png" alt="Banner donde aparecen perritos para adopción">
-</header>   
+    <header>
+        <!-- Logo -->
+        <img src="../img/logo.png" alt="Logo Fundación">
+
+        <!-- Menú de navegación -->
+        <nav>
+            <ul> 
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/nosotros.html">Nosotros</a></li>
+                <li><a href="../pages/unete.html">Únete</a></li>
+                <li><a href="../pages/donacion.html">Donación</a></li>
+                <li><a href="../pages/adopcion.html">Adopción</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <img src="../img/banner_donaciones.png" alt="Texto invitativo" class="banner">
+        
+        <div class="dona">
+            <h1>¿Cómo puedo ayudar?</h1>
+            <p>Nuestra fundación sólo se mantiene con las donaciones de nuestros padrinos, más lo que logramos recaudar en nuestras jornadas de adopción.
+                Actualmente en nuestro refugio tenemos 225 perros y 23 gatos. Al mes compramos 3.750 Kgs de alimento para perros adultos, 120 Kg. de comida para gatos y 15 Kg. para las aves que vienen a comer a diario.
+            </p>
+        </div>
+    </main>
+
+    <!-- Contenido de formas de donación -->
+    <section>
+        <ul>
+            <li>
+                <div class="donacion">
+                    <img class="dona_img" src="../img/img_dona.png" alt="">
+                    <h2>Donación</h2>
+                    <p>Con tu aporte podremos comprar alimentos, medicamentos, insumos, pagar cirugías, etc.</p>
+                    <button>Donar</button>
+                </div>
+            </li>
+            <li>
+                <div class="memoria">
+                    <img class="dona_img" src="../img/img_memoria.png" alt="">
+                    <h2>En memoria</h2>
+                    <p>Dona en memoria de un ser querido, su donación será publicada en nuestra página y redes sociales.</p>
+                    <button>Donar</button>
+                </div>
+            </li>
+            <li>
+                <div class="honor">
+                    <img class="dona_img" src="../img/img_honor.png" alt="">
+                    <h2>En honor</h2>
+                    <p>Dona en honor a un evento especial (Cumpleaños, boda, aniversario, logro, etc).</p>
+                    <button>Donar</button>
+                </div>
+            </li>
+            <li>
+                <div class="articulos">
+                    <img class="dona_img" src="../img/img_articulos.png" alt="">
+                    <h2>Artículos</h2>
+                    <p>Dona alimentos, insumos o artículos que ya tengas en buen estado.</p>
+                    <button>Donar</button>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p class="footerbold">Contáctanos</p>
+        <p class="footerwhite">refugiodondelamery@gmail.com</p>
+        <p class="c">© Refugio donde la Mery </p>
+    </footer>
+
 </body>
 </html>
