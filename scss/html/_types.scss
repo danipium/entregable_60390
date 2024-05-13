@@ -1,33 +1,33 @@
 @import "../utilidades/variables";
 
 h1 {
-    color: $primary-900;
-    font-family: "Roboto", sans-serif;
-    font-weight: 800;
-    font-size: 32px;
-    line-height: 90%;
-    }
-        
-    h2 {
-    color: $neutral-900;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 24px;   
-    line-height: 120%;
-    }
-        
-    h3 {
-    color: $neutral-900;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 18px;  
-    line-height: 120%;  
-    }
-        
-    p {
-    color: $neutral-900;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-size: 16px; 
-    line-height: 120%;
-    }
+  color: $primary-900;
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 90%;
+}
+
+h2 {
+  color: $neutral-900;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+}
+
+h3 {
+  color: $neutral-900;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+}
+
+p {
+  color: $neutral-900;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 120%;
+}

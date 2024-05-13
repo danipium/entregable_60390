@@ -1,9 +1,9 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  }
-  
+}
+
 @import "html/header";
 @import "html/main";
 @import "html/section";
@@ -16,34 +16,33 @@ footer {
   text-align: center;
   padding-top: 16px;
   padding-bottom: 16px;
-  }
-      
-  .footerwhite {
-  color: #FFFF;
+}
+
+.footerwhite {
+  color: #ffff;
   line-height: 120%;
-  }
-      
-  .footerbold {
-  color: #FFFF;
+}
+
+.footerbold {
+  color: #ffff;
   font-weight: 800;
   line-height: 120%;
-  }
-      
-  .c {
-  color: #FFFF;
+}
+
+.c {
+  color: #ffff;
   font-size: 12px;
   margin-top: 16px;
-  }
+}
 
-  button {
-    color: #FFFF;
-    background-color: #D8742A;
-    border: none;
-    font-family:"Roboto", sans-serif;
-    font-size: 16px;
-    font-weight: 900px;
-    height: 32px;
-    width: 90px;
-    border-radius: 4px;
-    }
-
+button {
+  color: #ffff;
+  background-color: #d8742a;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 900px;
+  height: 32px;
+  width: 90px;
+  border-radius: 4px;
+}

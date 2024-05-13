@@ -40,13 +40,10 @@ main {
         align-items: center;
         }
             
-    .donacion main {
-        background-color: $primary-100;
-        text-align: left;
-        flex-wrap: wrap;
 
     .dona {
         display: flex;
+        text-align: left;
         padding: 56px ;
         gap: 32px;
         align-items: center;
@@ -58,7 +55,11 @@ main {
         margin-bottom: 16px;
     }
             
-}
+    .donacion main {
+        background-color: $primary-100;
+        text-align: left;
+        flex-wrap: wrap;
+    }
 
 
 

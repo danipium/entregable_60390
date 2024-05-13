@@ -1,39 +1,21 @@
-
 @import "../utilidades/variables";
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: none;
+}
 
-    img {
-      max-width: 15%;
-      margin: 16px ;
-    }
+.navbar-toggler {
+  border: none;
+}
 
-    .home header nav ul, 
-    .nosotros header nav ul, 
-    .unete header nav ul, 
-    .adopcion header nav ul, 
-    .donacion header nav ul {
-      display: flex;
-      justify-content: right;
-      gap: 16px;
-      margin: 24px;
-    }
+.navbar-nav {
+  text-align: right;
+  color: $neutral-900;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
 
-    nav ul li {
-      list-style: none;
-      color: $neutral-900;
-      font-family: "Roboto", sans-serif;
-      font-weight: 400;
-      font-size: 14px;
-      text-decoration: none;
-
-      a {
-        color: $neutral-900;
-        text-decoration: none;
-      }
-    }
-
+.navbar-brand img {
+  max-width: 60px;
 }

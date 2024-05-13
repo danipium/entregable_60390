@@ -1,160 +1,161 @@
 @import "../utilidades/variables";
 
 .home section ul {
-    list-style: none;
-    text-align: center;
-    background-color: $primary-100;
-    padding: 56px;
-    display: grid;
-    grid-template-columns: 1;
-    grid-template-rows: 2;
-    gap: 32px;
-    margin-bottom: 0;
-    }
-    
-.el_equipo {
-    list-style: none;
-    text-align: center;
-    background-color: $secondary-100;
-    padding: 56px;
-    margin-bottom: 0;
+  list-style: none;
+  text-align: center;
+  background-color: $terciary-100;
+  padding: 16px 0 56px;
+  margin-bottom: 0;
 
-    h1 {
-        padding-bottom: 32px;
-    }
-}
-           
-.nosotros ul {
-    list-style: none;
-    text-align: center;
+  li {
     display: grid;
     grid-template-columns: 1;
     grid-template-rows: 2;
-    gap: 32px;
-    margin-bottom: 0;
+
+    .mascota_img {
+      max-width: 60%;
+      min-width: 100px;
+      margin-top: 56px;
     }
-    
-.unete section ul {
-    list-style: none;
-    text-align: center;
-    background-color: $secondary-100;
+  }
+}
+
+.equipo {
+  text-align: center;
+  background-color: $terciary-100;
+  padding: 16px 0 56px;
+  margin-bottom: 0;
+
+  h1 {
+    text-align: left;
     padding: 56px;
+  }
+
+  li {
+    list-style: none;
     display: grid;
     grid-template-columns: 1;
     grid-template-rows: 1;
-    gap: 64px;
-    margin-bottom: 0;
-    }
-    
-.adopcion section ul {
-    list-style: none;
-    text-align: center;
-    background-color: $primary-100;
-    padding: 40px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 2;
-    gap: 64px;
-    margin-bottom: 0;
-    }
-    
-.donacion section ul {
-    list-style: none;
-    text-align: center;
-    background-color: $terciary-100;
-    padding: 40px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 2;
-    gap: 64px;
-    margin-bottom: 0;
-    }
-    
-    
-section p span {
-    display: block;
-    }
-    
-    
-.mascota_img {
-    max-width: 60%;
-    min-width: 200px;
-    }
-    
-.equipo_img {
+  }
+  .equipo_img {
     max-width: 60%;
     min-width: 200px;
     border-radius: 40px;
-    }
-    
-.unete_img {
+    margin: 16px 40px;
+  }
+}
+
+.unete section ul {
+  text-align: center;
+  background-color: $terciary-100;
+  padding: 16px 0 56px;
+  margin-bottom: 0;
+
+  li {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1;
+  }
+  .unete_img {
     max-width: 20%;
     min-width: 100px;
-    }
-    
-.perris_img {
+    margin: 24px;
+  }
+}
+
+.adopcion section ul {
+  text-align: center;
+  background-color: $terciary-100;
+  padding: 16px 0 56px;
+  margin-bottom: 0;
+
+  li {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 4;
+  }
+  .perris_img {
     max-width: 100%;
     min-width: 100px;
-    }
-    
-.dona_img {
+    margin-top: 56px;
+  }
+}
+
+.donacion section ul {
+  text-align: center;
+  background-color: $terciary-100;
+  padding: 16px 0 56px;
+  margin-bottom: 0;
+
+  li {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 4;
+    margin: 48px;
+  }
+  .dona_img {
     max-width: 20%;
-    min-width: 200px;
+    min-width: 300px;
     border-radius: 16px;
-    }
-    
-    ul .mascota_2, 
-    ul .mascota_4, 
-    ul .proyectos, 
-    ul .rrss, 
-    ul .diseno, 
-    ul .perri5, 
-    ul .perri6, 
-    ul .perri7,
-    ul .perri8, 
-    ul .perri9, 
-    ul .perri10, 
-    ul .perri11, 
-    ul .perri12 {
-        display: none;
-    }
-    
-.perro_noticia, .equipo_mision {
-    width: 100%;
-    height: 50vh;
-    object-fit: cover;
-    overflow: hidden;
-    }
-    
+    margin: 24px;
+  }
+}
+
+section p span {
+  display: block;
+}
+
+ul .mascota_2,
+ul .mascota_4,
+ul .proyectos,
+ul .rrss,
+ul .diseno,
+ul .perri5,
+ul .perri6,
+ul .perri7,
+ul .perri8,
+ul .perri9,
+ul .perri10,
+ul .perri11,
+ul .perri12 {
+  display: none;
+}
+
+.perro_noticia,
+.equipo_mision {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  overflow: hidden;
+}
+
 .info {
-    flex-direction: column;
-    margin: 24px 24px 48px;
+  flex-direction: column;
+  margin: 24px 24px 48px;
 
-    h2, h3, p {
-        margin-bottom: 8px;
-        }
+  h2,
+  h3,
+  p {
+    margin-bottom: 8px;
+  }
 
-    .info span {
-        display: block;
-        }
+  .info span {
+    display: block;
+  }
 
-    .italic {
-        font-style: oblique;
-        font-size: 12px;
-        line-height: 120%;
-        }
-            
-    }
+  .italic {
+    font-style: oblique;
+    font-size: 12px;
+    line-height: 120%;
+  }
+}
 
 .mision {
-    background-color:$secondary-100 ;
-    padding: 56px ;
-    gap: 32px;
-    align-items: center;
-    }
-
-
-    
-    
-    
-    
+  background-color: $secondary-100;
+  padding: 56px;
+  gap: 32px;
+  align-items: center;
+}

@@ -5,35 +5,23 @@
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: none;
 }
-header img {
-  max-width: 15%;
-  margin: 16px;
+
+.navbar-toggler {
+  border: none;
 }
-header .home header nav ul,
-header .nosotros header nav ul,
-header .unete header nav ul,
-header .adopcion header nav ul,
-header .donacion header nav ul {
-  display: flex;
-  justify-content: right;
-  gap: 16px;
-  margin: 24px;
-}
-header nav ul li {
-  list-style: none;
+
+.navbar-nav {
+  text-align: right;
   color: #2D2D2D;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  text-decoration: none;
 }
-header nav ul li a {
-  color: #2D2D2D;
-  text-decoration: none;
+
+.navbar-brand img {
+  max-width: 60px;
 }
 
 main {
@@ -70,120 +58,124 @@ main .adopta {
   padding: 56px;
   align-items: center;
 }
-main .donacion main {
-  background-color: #F5F5DE;
-  text-align: left;
-  flex-wrap: wrap;
-}
-main .donacion main .dona {
+main .dona {
   display: flex;
+  text-align: left;
   padding: 56px;
   gap: 32px;
   align-items: center;
 }
-main p span {
+
+p span {
   display: block;
   margin-bottom: 16px;
+}
+
+.donacion main {
+  background-color: #F5F5DE;
+  text-align: left;
+  flex-wrap: wrap;
 }
 
 .home section ul {
   list-style: none;
   text-align: center;
-  background-color: #F5F5DE;
-  padding: 56px;
+  background-color: #F4E4E3;
+  padding: 16px 0 56px;
+  margin-bottom: 0;
+}
+.home section ul li {
   display: grid;
   grid-template-columns: 1;
   grid-template-rows: 2;
-  gap: 32px;
-  margin-bottom: 0;
+}
+.home section ul li .mascota_img {
+  max-width: 60%;
+  min-width: 100px;
+  margin-top: 56px;
 }
 
-.el_equipo {
-  list-style: none;
+.equipo {
   text-align: center;
-  background-color: #E4E9F6;
+  background-color: #F4E4E3;
+  padding: 16px 0 56px;
+  margin-bottom: 0;
+}
+.equipo h1 {
+  text-align: left;
   padding: 56px;
-  margin-bottom: 0;
 }
-.el_equipo h1 {
-  padding-bottom: 32px;
-}
-
-.nosotros ul {
+.equipo li {
   list-style: none;
-  text-align: center;
-  display: grid;
-  grid-template-columns: 1;
-  grid-template-rows: 2;
-  gap: 32px;
-  margin-bottom: 0;
-}
-
-.unete section ul {
-  list-style: none;
-  text-align: center;
-  background-color: #E4E9F6;
-  padding: 56px;
   display: grid;
   grid-template-columns: 1;
   grid-template-rows: 1;
-  gap: 64px;
+}
+.equipo .equipo_img {
+  max-width: 60%;
+  min-width: 200px;
+  border-radius: 40px;
+  margin: 16px 40px;
+}
+
+.unete section ul {
+  text-align: center;
+  background-color: #F4E4E3;
+  padding: 16px 0 56px;
   margin-bottom: 0;
+}
+.unete section ul li {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 1;
+}
+.unete section ul .unete_img {
+  max-width: 20%;
+  min-width: 100px;
+  margin: 24px;
 }
 
 .adopcion section ul {
-  list-style: none;
   text-align: center;
-  background-color: #F5F5DE;
-  padding: 40px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 2;
-  gap: 64px;
+  background-color: #F4E4E3;
+  padding: 16px 0 56px;
   margin-bottom: 0;
+}
+.adopcion section ul li {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 4;
+}
+.adopcion section ul .perris_img {
+  max-width: 100%;
+  min-width: 100px;
+  margin-top: 56px;
 }
 
 .donacion section ul {
-  list-style: none;
   text-align: center;
   background-color: #F4E4E3;
-  padding: 40px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 2;
-  gap: 64px;
+  padding: 16px 0 56px;
   margin-bottom: 0;
+}
+.donacion section ul li {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 4;
+  margin: 48px;
+}
+.donacion section ul .dona_img {
+  max-width: 20%;
+  min-width: 300px;
+  border-radius: 16px;
+  margin: 24px;
 }
 
 section p span {
   display: block;
-}
-
-.mascota_img {
-  max-width: 60%;
-  min-width: 200px;
-}
-
-.equipo_img {
-  max-width: 60%;
-  min-width: 200px;
-  border-radius: 40px;
-}
-
-.unete_img {
-  max-width: 20%;
-  min-width: 100px;
-}
-
-.perris_img {
-  max-width: 100%;
-  min-width: 100px;
-}
-
-.dona_img {
-  max-width: 20%;
-  min-width: 200px;
-  border-radius: 16px;
 }
 
 ul .mascota_2,
@@ -202,7 +194,8 @@ ul .perri12 {
   display: none;
 }
 
-.perro_noticia, .equipo_mision {
+.perro_noticia,
+.equipo_mision {
   width: 100%;
   height: 50vh;
   object-fit: cover;
@@ -213,7 +206,9 @@ ul .perri12 {
   flex-direction: column;
   margin: 24px 24px 48px;
 }
-.info h2, .info h3, .info p {
+.info h2,
+.info h3,
+.info p {
   margin-bottom: 8px;
 }
 .info .info span {
@@ -299,7 +294,7 @@ p {
     align-items: center;
   }
 }
-@media screen and (min-width: 600px) and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   section ul .mascota_2,
   section ul .mascota_4,
   section ul .proyectos,
@@ -315,32 +310,62 @@ p {
   section ul .perri12 {
     display: block;
   }
-  .home section ul {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1;
-    align-items: center;
+  .navbar-toggler,
+  .navbar-nav,
+  .navbar-brand {
+    display: none;
   }
-  .nosotros section ul {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 2;
+  header {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    gap: 16px;
+    margin: 16px;
   }
-  .unete section ul {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1;
-    align-items: center;
+  header nav ul {
+    display: flex;
+    gap: 32px;
   }
-  .nosotros section ul {
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 2;
-    align-items: center;
+  header nav ul li {
+    list-style: none;
+    color: #2D2D2D;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
   }
-  .donacion section ul {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 2;
-    align-items: center;
+  header nav ul li a {
+    color: #2D2D2D;
+    text-decoration: none;
+  }
+  header nav ul li a img {
+    width: 60px;
   }
 }
+.home section ul {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1;
+  align-items: center;
+}
+
+.nosotros section ul {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 2;
+  align-items: center;
+}
+
+.unete section ul {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1;
+  align-items: center;
+}
+
+.donacion section ul {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 2;
+  align-items: center;
+}
+
 footer {
   background-color: #1D3C33;
   text-align: center;
@@ -367,7 +392,7 @@ footer {
 
 button {
   color: white;
-  background-color: #D8742A;
+  background-color: #d8742a;
   border: none;
   font-family: "Roboto", sans-serif;
   font-size: 16px;

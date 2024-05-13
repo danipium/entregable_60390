@@ -1,93 +1,125 @@
-@media screen and (min-width: 600px) {
+@import "../utilidades/variables";
 
-    section ul .mascota_2, 
-    section ul .proyectos, 
-    section ul .perri5, 
-    section ul .perri6, 
-    section ul .perri7, 
-    section ul .perri8 {
-        display: block;
+//Tablet
+
+@media screen and (min-width: 600px) {
+  section ul .mascota_2,
+  section ul .proyectos,
+  section ul .perri5,
+  section ul .perri6,
+  section ul .perri7,
+  section ul .perri8 {
+    display: block;
+  }
+
+  .home section ul {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1;
+    align-items: center;
+  }
+
+  .nosotros section ul {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 2;
+    align-items: center;
+  }
+
+  .unete section ul {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1;
+    align-items: center;
+  }
+
+  .adopcion section ul {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2;
+    align-items: center;
+  }
+
+  .donacion section ul {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 2;
+    align-items: center;
+  }
+}
+
+//Desktop
+
+@media screen and (min-width: 1024px) {
+  section ul .mascota_2,
+  section ul .mascota_4,
+  section ul .proyectos,
+  section ul .rrss,
+  section ul .diseno,
+  section ul .perri5,
+  section ul .perri6,
+  section ul .perri7,
+  section ul .perri8,
+  section ul .perri9,
+  section ul .perri10,
+  section ul .perri11,
+  section ul .perri12 {
+    display: block;
+  }
+
+  .navbar-toggler,
+  .navbar-nav,
+  .navbar-brand {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    margin: 16px;
+
+    nav ul {
+      display: flex;
+      gap: 32px;
+
+      li {
+        list-style: none;
+        color: $neutral-900;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        text-decoration: none;
+
+        a {
+          color: $neutral-900;
+          text-decoration: none;
+
+          img {
+            width: 60px;
+          }
+        }
+      }
     }
-    
-    .home section ul {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1;
-        align-items: center;
-    }
-    
-    .nosotros section ul {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 2;
-        align-items: center;
-    }
-    
-    .unete section ul {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1;
-        align-items: center;
-    }
-    
-    .adopcion section ul {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 2;
-        align-items: center;
-    }
-    
-    .donacion section ul {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 2;
-        align-items: center;
-    }
-    
-    
-    @media screen and (min-width: 1024px) {
-        
-    section ul .mascota_2, 
-    section ul .mascota_4, 
-    section ul .proyectos, 
-    section ul .rrss, 
-    section ul .diseno,
-    section ul .perri5, 
-    section ul .perri6, 
-    section ul .perri7, 
-    section ul .perri8, 
-    section ul .perri9, 
-    section ul .perri10, 
-    section ul .perri11, 
-    section ul .perri12 {
-        display: block;
-    }
-    
-    .home section ul {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 1;
-        align-items: center;
-    }
-    
-    .nosotros section ul {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 2;
-        align-items: center;
-    }
-    
-    .unete section ul {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1;
-        align-items: center;
-    }
-    
-    
-    .nosotros section ul {
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: 2;
-        align-items: center;
-    }
-    
-    .donacion section ul {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 2;
-        align-items: center;
-    }
-    
-    }
+  }
+}
+
+.home section ul {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1;
+  align-items: center;
+}
+
+.nosotros section ul {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 2;
+  align-items: center;
+}
+
+.unete section ul {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1;
+  align-items: center;
+}
+
+.donacion section ul {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 2;
+  align-items: center;
 }
