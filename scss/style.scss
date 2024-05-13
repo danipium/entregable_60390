@@ -1,0 +1,49 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+  
+@import "html/header";
+@import "html/main";
+@import "html/section";
+@import "html/types";
+@import "html/mq";
+@import "utilidades/variables";
+
+footer {
+  background-color: $primary-900;
+  text-align: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  }
+      
+  .footerwhite {
+  color: #FFFF;
+  line-height: 120%;
+  }
+      
+  .footerbold {
+  color: #FFFF;
+  font-weight: 800;
+  line-height: 120%;
+  }
+      
+  .c {
+  color: #FFFF;
+  font-size: 12px;
+  margin-top: 16px;
+  }
+
+  button {
+    color: #FFFF;
+    background-color: #D8742A;
+    border: none;
+    font-family:"Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 900px;
+    height: 32px;
+    width: 90px;
+    border-radius: 4px;
+    }
+

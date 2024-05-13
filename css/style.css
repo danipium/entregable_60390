@@ -1,430 +1,380 @@
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-/* estilos de header */
 
 header {
-display: flex;
-justify-content: space-between;
-align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
 header img {
-max-width: 15%;
-margin: 16px ;
+  max-width: 15%;
+  margin: 16px;
 }
-
-/* estilos menu */
-
-.home header nav ul, 
-.nosotros header nav ul, 
-.unete header nav ul, 
-.adopcion header nav ul, 
-.donacion header nav ul {
-display: flex;
-justify-content: right;
-gap: 16px;
-margin: 24px;
+header .home header nav ul,
+header .nosotros header nav ul,
+header .unete header nav ul,
+header .adopcion header nav ul,
+header .donacion header nav ul {
+  display: flex;
+  justify-content: right;
+  gap: 16px;
+  margin: 24px;
 }
-
 header nav ul li {
-list-style: none;
-color: #2D2D2D;
-font-family: "Roboto", sans-serif;
-font-weight: 400;
-font-size: 14px;
-text-decoration: none;
+  list-style: none;
+  color: #2D2D2D;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration: none;
 }
-
 header nav ul li a {
-color: #2D2D2D;
-text-decoration: none;
-}
-
-/* estilos main */
-
-.banner {
-width: 100%;
-object-fit: cover;
+  color: #2D2D2D;
+  text-decoration: none;
 }
 
 main {
-background-color: beige;
-text-align: left;
-flex-wrap: wrap;
+  background-color: #F5F5DE;
+  text-align: left;
+  flex-wrap: wrap;
 }
-
-.somos {
-display: flex;
-padding: 56px ;
-gap: 32px;
-align-items: center;
-
+main .banner {
+  width: 100%;
+  object-fit: cover;
 }
-
-.somos p span {
-display: block;
+main .somos {
+  display: flex;
+  padding: 56px;
+  gap: 32px;
+  align-items: center;
 }
-
-.titulo {
-margin: 40px 56px ;
-gap: 32px;
-align-items: center;
+main .somos p span {
+  display: block;
 }
-
-.historia {
-padding: 56px ;
-gap: 32px;
-align-items: center;
-
+main .titulo {
+  margin: 40px 56px;
+  gap: 32px;
+  align-items: center;
 }
-
-.adopta {
-background-color: beige;
-text-align: left;
-padding: 56px ;
-align-items: center;
+main .historia {
+  padding: 56px;
+  gap: 32px;
+  align-items: center;
 }
-
-.donacion main {
-background-color: #fff3e0;
-text-align: left;
-flex-wrap: wrap;
+main .adopta {
+  background-color: #F5F5DE;
+  text-align: left;
+  padding: 56px;
+  align-items: center;
 }
-
-.dona {
-display: flex;
-padding: 56px ;
-gap: 32px;
-align-items: center;
-    
+main .donacion main {
+  background-color: #F5F5DE;
+  text-align: left;
+  flex-wrap: wrap;
 }
-
-
-/* estilos seccion */
+main .donacion main .dona {
+  display: flex;
+  padding: 56px;
+  gap: 32px;
+  align-items: center;
+}
+main p span {
+  display: block;
+  margin-bottom: 16px;
+}
 
 .home section ul {
-list-style: none;
-text-align: center;
-background-color: #F7E3E3;
-padding: 56px;
-display: grid;
-grid-template-columns: 1;
-grid-template-rows: 2;
-gap: 32px;
+  list-style: none;
+  text-align: center;
+  background-color: #F5F5DE;
+  padding: 56px;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 2;
+  gap: 32px;
+  margin-bottom: 0;
 }
 
 .el_equipo {
-list-style: none;
-text-align: center;
-background-color: #e3e9f7;
-padding: 56px;
+  list-style: none;
+  text-align: center;
+  background-color: #E4E9F6;
+  padding: 56px;
+  margin-bottom: 0;
 }
-    
 .el_equipo h1 {
-padding-bottom: 32px;
+  padding-bottom: 32px;
 }
 
 .nosotros ul {
-list-style: none;
-text-align: center;
-display: grid;
-grid-template-columns: 1;
-grid-template-rows: 2;
-gap: 32px;
+  list-style: none;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 2;
+  gap: 32px;
+  margin-bottom: 0;
 }
 
 .unete section ul {
-list-style: none;
-text-align: center;
-background-color: #fef5e4;
-padding: 56px;
-display: grid;
-grid-template-columns: 1;
-grid-template-rows: 1;
-gap: 64px;
+  list-style: none;
+  text-align: center;
+  background-color: #E4E9F6;
+  padding: 56px;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 1;
+  gap: 64px;
+  margin-bottom: 0;
 }
 
 .adopcion section ul {
-list-style: none;
-text-align: center;
-background-color: #fae8fc;
-padding: 40px;
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: 2;
-gap: 64px;
+  list-style: none;
+  text-align: center;
+  background-color: #F5F5DE;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 2;
+  gap: 64px;
+  margin-bottom: 0;
 }
 
 .donacion section ul {
-list-style: none;
-text-align: center;
-background-color: #fae8fc;
-padding: 40px;
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: 2;
-gap: 64px;
+  list-style: none;
+  text-align: center;
+  background-color: #F4E4E3;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 2;
+  gap: 64px;
+  margin-bottom: 0;
 }
-
 
 section p span {
-display: block;
-}
-
-main p span {
-display: block;
-margin-bottom: 16px;
+  display: block;
 }
 
 .mascota_img {
-max-width: 60%;
-min-width: 200px;
+  max-width: 60%;
+  min-width: 200px;
 }
 
 .equipo_img {
-max-width: 60%;
-min-width: 200px;
-border-radius: 40px;
+  max-width: 60%;
+  min-width: 200px;
+  border-radius: 40px;
 }
 
 .unete_img {
-max-width: 20%;
-min-width: 100px;
+  max-width: 20%;
+  min-width: 100px;
 }
 
 .perris_img {
-max-width: 100%;
-min-width: 100px;
+  max-width: 100%;
+  min-width: 100px;
 }
 
 .dona_img {
-max-width: 20%;
-min-width: 200px;
-border-radius: 16px;
+  max-width: 20%;
+  min-width: 200px;
+  border-radius: 16px;
 }
 
-ul .mascota_2, 
-ul .mascota_4, 
-ul .proyectos, 
-ul .rrss, 
-ul .diseno, 
-ul .perri5, 
-ul .perri6, 
+ul .mascota_2,
+ul .mascota_4,
+ul .proyectos,
+ul .rrss,
+ul .diseno,
+ul .perri5,
+ul .perri6,
 ul .perri7,
-ul .perri8, 
-ul .perri9, 
-ul .perri10, 
-ul .perri11, 
+ul .perri8,
+ul .perri9,
+ul .perri10,
+ul .perri11,
 ul .perri12 {
-    display: none;
+  display: none;
 }
 
 .perro_noticia, .equipo_mision {
-width: 100%;
-height: 50vh;
-object-fit: cover;
-overflow: hidden;
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 .info {
-flex-direction: column;
-margin: 24px 24px 48px;
+  flex-direction: column;
+  margin: 24px 24px 48px;
 }
-
-.info h2, h3, p {
-margin-bottom: 8px;
+.info h2, .info h3, .info p {
+  margin-bottom: 8px;
 }
-
-.info span {
-display: block;
+.info .info span {
+  display: block;
 }
-
-.italic {
-font-style: oblique;
-font-size: 12px;
-line-height: 120%;
+.info .italic {
+  font-style: oblique;
+  font-size: 12px;
+  line-height: 120%;
 }
 
 .mision {
-background-color:#cecef8 ;
-padding: 56px ;
-gap: 32px;
-align-items: center;
+  background-color: #E4E9F6;
+  padding: 56px;
+  gap: 32px;
+  align-items: center;
 }
-
-
-
-
-/* estilos footer */
-
-footer {
-background-color: #0F3D33;
-text-align: center;
-padding-top: 16px;
-padding-bottom: 16px;
-}
-    
-.footerwhite {
-color: #FFFF;
-line-height: 120%;
-}
-    
-.footerbold {
-color: #FFFF;
-font-weight: 800;
-line-height: 120%;
-}
-    
-.c {
-color: #FFFF;
-font-size: 12px;
-margin-top: 16px;
-}
-
-/* estilos botones */
-
-button {
-color: #FFFF;
-background-color: #D8742A;
-border: none;
-font-family:"Roboto", sans-serif;
-font-size: 16px;
-font-weight: 900px;
-height: 32px;
-width: 90px;
-border-radius: 4px;
-}
-
-
-/* estilos textos */
 
 h1 {
-color: #0F3D33;
-font-family: "Roboto", sans-serif;
-font-weight: 800;
-font-size: 32px;
-line-height: 90%;
+  color: #1D3C33;
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 90%;
 }
-    
+
 h2 {
-color: #2D2D2D;
-font-family: "Roboto", sans-serif;
-font-weight: 500;
-font-size: 24px;   
-line-height: 120%;
+  color: #2D2D2D;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
 }
-    
+
 h3 {
-color: #2D2D2D;
-font-family: "Roboto", sans-serif;
-font-weight: 400;
-font-size: 18px;  
-line-height: 120%;  
+  color: #2D2D2D;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
 }
-    
+
 p {
-color: #2D2D2D;
-font-family: "Roboto", sans-serif;
-font-weight: 300;
-font-size: 16px; 
-line-height: 120%;
+  color: #2D2D2D;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 120%;
 }
-
-
-/* mq tablet */
 
 @media screen and (min-width: 600px) {
-
-section ul .mascota_2, 
-section ul .proyectos, 
-section ul .perri5, 
-section ul .perri6, 
-section ul .perri7, 
-section ul .perri8 {
+  section ul .mascota_2,
+  section ul .proyectos,
+  section ul .perri5,
+  section ul .perri6,
+  section ul .perri7,
+  section ul .perri8 {
     display: block;
-}
-
-.home section ul {
+  }
+  .home section ul {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1;
     align-items: center;
-}
-
-.nosotros section ul {
+  }
+  .nosotros section ul {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 2;
     align-items: center;
-}
-
-.unete section ul {
+  }
+  .unete section ul {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1;
     align-items: center;
-}
-
-.adopcion section ul {
+  }
+  .adopcion section ul {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 2;
     align-items: center;
-}
-
-.donacion section ul {
+  }
+  .donacion section ul {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 2;
     align-items: center;
+  }
 }
-
-
-
-@media screen and (min-width: 1024px) {
-    
-section ul .mascota_2, 
-section ul .mascota_4, 
-section ul .proyectos, 
-section ul .rrss, 
-section ul .diseno,
-section ul .perri5, 
-section ul .perri6, 
-section ul .perri7, 
-section ul .perri8, 
-section ul .perri9, 
-section ul .perri10, 
-section ul .perri11, 
-section ul .perri12 {
+@media screen and (min-width: 600px) and (min-width: 1024px) {
+  section ul .mascota_2,
+  section ul .mascota_4,
+  section ul .proyectos,
+  section ul .rrss,
+  section ul .diseno,
+  section ul .perri5,
+  section ul .perri6,
+  section ul .perri7,
+  section ul .perri8,
+  section ul .perri9,
+  section ul .perri10,
+  section ul .perri11,
+  section ul .perri12 {
     display: block;
-}
-
-.home section ul {
+  }
+  .home section ul {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1;
     align-items: center;
-}
-
-.nosotros section ul {
+  }
+  .nosotros section ul {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 2;
     align-items: center;
-}
-
-.unete section ul {
+  }
+  .unete section ul {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1;
     align-items: center;
-}
-
-
-.nosotros section ul {
+  }
+  .nosotros section ul {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 2;
     align-items: center;
-}
-
-.donacion section ul {
+  }
+  .donacion section ul {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 2;
     align-items: center;
+  }
 }
+footer {
+  background-color: #1D3C33;
+  text-align: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.footerwhite {
+  color: white;
+  line-height: 120%;
+}
+
+.footerbold {
+  color: white;
+  font-weight: 800;
+  line-height: 120%;
+}
+
+.c {
+  color: white;
+  font-size: 12px;
+  margin-top: 16px;
+}
+
+button {
+  color: white;
+  background-color: #D8742A;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 900px;
+  height: 32px;
+  width: 90px;
+  border-radius: 4px;
+}
+
+/*# sourceMappingURL=style.css.map */
