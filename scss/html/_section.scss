@@ -6,37 +6,57 @@
   background-color: $terciary-100;
   padding: 16px 0 56px;
   margin-bottom: 0;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
 
   li {
-    display: grid;
-    grid-template-columns: 1;
-    grid-template-rows: 2;
-
-    .mascota_img {
-      max-width: 60%;
-      min-width: 100px;
-      margin-top: 56px;
+    button {
+      color: #ffff;
+      background-color: #d8742a;
+      border: none;
+      font-family: "Roboto", sans-serif;
+      font-size: 16px;
+      margin-top: 8px;
+      font-weight: 900px;
+      width: 90px;
+      border-radius: 4px;
     }
+  }
+
+  .mascota_img {
+    max-width: 60%;
+    min-width: 100px;
+    margin-top: 56px;
   }
 }
 
-.equipo {
+.equipo ul {
   text-align: center;
   background-color: $terciary-100;
   padding: 16px 0 56px;
   margin-bottom: 0;
+  display: grid;
 
+  li {
+    list-style: none;
+
+    button {
+      color: #ffff;
+      background-color: #d8742a;
+      border: none;
+      font-family: "Roboto", sans-serif;
+      font-size: 16px;
+      margin-top: 8px;
+      font-weight: 900px;
+      width: 90px;
+      border-radius: 4px;
+    }
+  }
   h1 {
     text-align: left;
     padding: 56px;
   }
 
-  li {
-    list-style: none;
-    display: grid;
-    grid-template-columns: 1;
-    grid-template-rows: 1;
-  }
   .equipo_img {
     max-width: 60%;
     min-width: 200px;
@@ -50,13 +70,23 @@
   background-color: $terciary-100;
   padding: 16px 0 56px;
   margin-bottom: 0;
+  list-style: none;
+  display: grid;
 
   li {
-    list-style: none;
-    display: grid;
-    grid-template-columns: 1;
-    grid-template-rows: 1;
+    button {
+      color: #ffff;
+      background-color: #d8742a;
+      border: none;
+      font-family: "Roboto", sans-serif;
+      font-size: 16px;
+      margin-top: 8px;
+      font-weight: 900px;
+      width: 90px;
+      border-radius: 4px;
+    }
   }
+
   .unete_img {
     max-width: 20%;
     min-width: 100px;
@@ -69,13 +99,23 @@
   background-color: $terciary-100;
   padding: 16px 0 56px;
   margin-bottom: 0;
+  list-style: none;
+  display: grid;
 
   li {
-    list-style: none;
-    display: grid;
-    grid-template-columns: 1;
-    grid-template-rows: 4;
+    button {
+      color: #ffff;
+      background-color: #d8742a;
+      border: none;
+      font-family: "Roboto", sans-serif;
+      font-size: 16px;
+      margin-top: 8px;
+      font-weight: 900px;
+      width: 90px;
+      border-radius: 4px;
+    }
   }
+
   .perris_img {
     max-width: 100%;
     min-width: 100px;
@@ -86,22 +126,37 @@
 .donacion section ul {
   text-align: center;
   background-color: $terciary-100;
-  padding: 16px 0 56px;
   margin-bottom: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 4;
 
   li {
-    list-style: none;
-    display: grid;
-    grid-template-columns: 1;
-    grid-template-rows: 4;
-    margin: 48px;
-  }
-  .dona_img {
-    max-width: 20%;
-    min-width: 300px;
-    border-radius: 16px;
     margin: 24px;
+
+    button {
+      color: #ffff;
+      background-color: #d8742a;
+      border: none;
+      font-family: "Roboto", sans-serif;
+      font-size: 16px;
+      margin-top: 8px;
+      font-weight: 900px;
+      width: 90px;
+      border-radius: 4px;
+    }
   }
+
+  p {
+    margin-bottom: 8px;
+  }
+}
+.dona_img {
+  max-width: 20%;
+  min-width: 300px;
+  border-radius: 16px;
+  margin-bottom: 8px;
 }
 
 section p span {

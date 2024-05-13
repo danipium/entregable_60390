@@ -13,32 +13,27 @@
   }
 
   .home section ul {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1;
     align-items: center;
   }
 
-  .nosotros section ul {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 2;
+  .equipo section ul {
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
   }
 
   .unete section ul {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1;
+
     align-items: center;
   }
 
   .adopcion section ul {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 2;
     align-items: center;
   }
 
   .donacion section ul {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 2;
     align-items: center;
   }
 }
@@ -98,28 +93,25 @@
       }
     }
   }
-}
 
-.home section ul {
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1;
-  align-items: center;
-}
+  .home section ul {
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+  }
 
-.nosotros section ul {
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 2;
-  align-items: center;
-}
+  .nosotros section ul {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+  }
 
-.unete section ul {
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1;
-  align-items: center;
-}
+  .unete section ul {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+  }
 
-.donacion section ul {
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 2;
-  align-items: center;
+  .donacion section ul {
+    grid-template-columns: repeat(4, 1fr);
+
+    align-items: center;
+  }
 }

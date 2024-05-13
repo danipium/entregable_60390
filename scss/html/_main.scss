@@ -1,69 +1,60 @@
 @import "../utilidades/variables";
 
 main {
-    background-color: $primary-100;
-    text-align: left;
-    flex-wrap: wrap;
+  background-color: $primary-100;
+  text-align: left;
+  flex-wrap: wrap;
 
-    .banner {
-        width: 100%;
-        object-fit: cover;
-        }
+  .banner {
+    width: 100%;
+    object-fit: cover;
+  }
 
-    .somos {
-        display: flex;
-        padding: 56px ;
-        gap: 32px;
-        align-items: center;
-
-        p span {
-            display: block;
-            }
-        }
-
-    .titulo {
-        margin: 40px 56px ;
-        gap: 32px;
-        align-items: center;
-        }
-            
-    .historia {
-        padding: 56px ;
-        gap: 32px;
-        align-items: center;
-        }
-            
-    .adopta {
-        background-color: $primary-100;
-        text-align: left;
-        padding: 56px ;
-        align-items: center;
-        }
-            
-
-    .dona {
-        display: flex;
-        text-align: left;
-        padding: 56px ;
-        gap: 32px;
-        align-items: center;
-        }
-    }
+  .somos {
+    display: flex;
+    padding: 56px;
+    gap: 32px;
+    align-items: center;
 
     p span {
-        display: block;
-        margin-bottom: 16px;
+      display: block;
     }
-            
-    .donacion main {
-        background-color: $primary-100;
-        text-align: left;
-        flex-wrap: wrap;
-    }
+  }
 
+  .titulo {
+    margin: 40px 56px;
+    gap: 32px;
+    align-items: center;
+  }
 
+  .historia {
+    padding: 56px;
+    gap: 32px;
+    align-items: center;
+  }
 
+  .adopta {
+    background-color: $primary-100;
+    text-align: left;
+    padding: 56px;
+    align-items: center;
+  }
 
-    
+  .dona {
+    display: flex;
+    text-align: left;
+    padding: 56px;
+    gap: 32px;
+    align-items: center;
+  }
+}
 
-    
+p span {
+  display: block;
+}
+
+.donacion main {
+  background-color: $primary-100;
+  text-align: left;
+  flex-wrap: wrap;
+}
