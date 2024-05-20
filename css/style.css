@@ -122,6 +122,10 @@ p span {
   width: 90px;
   border-radius: 4px;
 }
+.home section ul li .boton-hover:hover {
+  background-color: #863e07;
+  transform: scale(1.05);
+}
 .home section ul .mascota_img {
   max-width: 60%;
   min-width: 20%;
@@ -157,6 +161,10 @@ li button {
   width: 90px;
   border-radius: 4px;
 }
+li .boton-hover:hover {
+  background-color: #863e07;
+  transform: scale(1.05);
+}
 li .equipo_img {
   max-width: 60%;
   min-width: 200px;
@@ -183,6 +191,10 @@ li .equipo_img {
   width: 90px;
   border-radius: 4px;
 }
+.unete section ul li .boton-hover:hover {
+  background-color: #863e07;
+  transform: scale(1.05);
+}
 .unete section ul .unete_img {
   max-width: 20%;
   min-width: 100px;
@@ -207,6 +219,10 @@ li .equipo_img {
   font-weight: 900px;
   width: 90px;
   border-radius: 4px;
+}
+.adopcion section ul li .boton-hover:hover {
+  background-color: #863e07;
+  transform: scale(1.05);
 }
 .adopcion section ul .perris_img {
   max-width: 100%;
@@ -236,6 +252,10 @@ li .equipo_img {
   font-weight: 900px;
   width: 90px;
   border-radius: 4px;
+}
+.donacion section ul li .boton-hover:hover {
+  background-color: #863e07;
+  transform: scale(1.05);
 }
 .donacion section ul p {
   margin-bottom: 8px;
