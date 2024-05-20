@@ -10,6 +10,8 @@
   grid-template-columns: repeat(1, 1fr);
 
   li {
+    margin: 16px;
+    
     button {
       color: #ffff;
       background-color: #d8742a;
@@ -25,36 +27,45 @@
 
   .mascota_img {
     max-width: 60%;
-    min-width: 100px;
+    min-width: 20%;
     margin-top: 56px;
   }
 }
 
-.equipo ul {
-  text-align: center;
-  background-color: $terciary-100;
-  padding: 16px 0 56px;
-  margin-bottom: 0;
-  display: grid;
+.equipo {
 
-  li {
-    list-style: none;
-
-    button {
-      color: #ffff;
-      background-color: #d8742a;
-      border: none;
-      font-family: "Roboto", sans-serif;
-      font-size: 16px;
-      margin-top: 8px;
-      font-weight: 900px;
-      width: 90px;
-      border-radius: 4px;
-    }
+  ul {
+    text-align: center;
+    background-color: $terciary-100;
+    padding: 56px;
+    margin-bottom: 0;
+    display: grid;
   }
+
   h1 {
+    background-color: $terciary-100 ;
     text-align: left;
     padding: 56px;
+    padding-bottom: 8px;
+    margin-bottom: 0;
+  }
+}
+
+
+
+li {
+  list-style: none;
+
+  button {
+    color: #ffff;
+    background-color: #d8742a;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    margin-top: 8px;
+    font-weight: 900px;
+    width: 90px;
+    border-radius: 4px;
   }
 
   .equipo_img {
@@ -179,7 +190,7 @@ ul .perri12 {
   display: none;
 }
 
-.perro_noticia,
+.noticia_img,
 .equipo_mision {
   width: 100%;
   height: 50vh;
@@ -191,11 +202,6 @@ ul .perri12 {
   flex-direction: column;
   margin: 24px 24px 48px;
 
-  h2,
-  h3,
-  p {
-    margin-bottom: 8px;
-  }
 
   .info span {
     display: block;

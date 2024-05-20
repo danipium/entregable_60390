@@ -12,12 +12,38 @@ header {
   border: none;
 }
 
-.navbar-nav {
+.navbar-toggler:focus {
+  text-decoration: underline !important;
+  outline: 4px solid #327532 !important;
+  box-shadow: none !important;
+}
+
+.dropdown-menu {
+  padding: 8px;
+  min-width: 100px !important;
+  margin-top: 0;
+  transform: translateY(-10%);
+}
+
+.dropdown-item {
   text-align: right;
   color: #2d2d2d;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
+  padding: 8px;
+}
+
+.dropdown-item:hover {
+  background-color: #f5f5de;
+}
+
+:root {
+  --bs-dropdown-min-width: unset;
+}
+
+.dropdown-menu {
+  --bs-dropdown-min-width: 8rem;
 }
 
 .navbar-brand img {
@@ -27,14 +53,13 @@ header {
 main {
   background-color: #f5f5de;
   text-align: left;
-  flex-wrap: wrap;
+  grid-template-columns: 1;
 }
 main .banner {
   width: 100%;
   object-fit: cover;
 }
 main .somos {
-  display: flex;
   padding: 56px;
   gap: 32px;
   align-items: center;
@@ -59,7 +84,6 @@ main .adopta {
   align-items: center;
 }
 main .dona {
-  display: flex;
   text-align: left;
   padding: 56px;
   gap: 32px;
@@ -73,7 +97,6 @@ p span {
 .donacion main {
   background-color: #f5f5de;
   text-align: left;
-  flex-wrap: wrap;
 }
 
 .home section ul {
@@ -84,6 +107,9 @@ p span {
   margin-bottom: 0;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
+}
+.home section ul li {
+  margin: 16px;
 }
 .home section ul li button {
   color: white;
@@ -98,21 +124,29 @@ p span {
 }
 .home section ul .mascota_img {
   max-width: 60%;
-  min-width: 100px;
+  min-width: 20%;
   margin-top: 56px;
 }
 
 .equipo ul {
   text-align: center;
   background-color: #f4e4e3;
-  padding: 16px 0 56px;
+  padding: 56px;
   margin-bottom: 0;
   display: grid;
 }
-.equipo ul li {
+.equipo h1 {
+  background-color: #f4e4e3;
+  text-align: left;
+  padding: 56px;
+  padding-bottom: 8px;
+  margin-bottom: 0;
+}
+
+li {
   list-style: none;
 }
-.equipo ul li button {
+li button {
   color: white;
   background-color: #d8742a;
   border: none;
@@ -123,11 +157,7 @@ p span {
   width: 90px;
   border-radius: 4px;
 }
-.equipo ul h1 {
-  text-align: left;
-  padding: 56px;
-}
-.equipo ul .equipo_img {
+li .equipo_img {
   max-width: 60%;
   min-width: 200px;
   border-radius: 40px;
@@ -238,7 +268,7 @@ ul .perri12 {
   display: none;
 }
 
-.perro_noticia,
+.noticia_img,
 .equipo_mision {
   width: 100%;
   height: 50vh;
@@ -249,11 +279,6 @@ ul .perri12 {
 .info {
   flex-direction: column;
   margin: 24px 24px 48px;
-}
-.info h2,
-.info h3,
-.info p {
-  margin-bottom: 8px;
 }
 .info .info span {
   display: block;
@@ -275,23 +300,23 @@ h1 {
   color: #1d3c33;
   font-family: "Roboto", sans-serif;
   font-weight: 800;
-  font-size: 32px;
-  line-height: 90%;
+  font-size: 48px;
+  line-height: 100%;
 }
 
 h2 {
   color: #2d2d2d;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 120%;
+  font-size: 32px;
+  line-height: 100%;
 }
 
 h3 {
   color: #2d2d2d;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 24px;
   line-height: 120%;
 }
 
@@ -299,8 +324,8 @@ p {
   color: #2d2d2d;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-size: 16px;
-  line-height: 120%;
+  font-size: 18px;
+  line-height: 150%;
 }
 
 @media screen and (min-width: 600px) {
@@ -358,7 +383,7 @@ p {
     justify-content: space-between;
     align-items: center;
     gap: 16px;
-    margin: 16px;
+    margin: 24px;
   }
   header nav ul {
     display: flex;
@@ -379,11 +404,31 @@ p {
   header nav ul li a img {
     width: 60px;
   }
+  .home section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   .home section ul {
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
   }
+  .historia h1,
+  .historia h3,
+  .historia p,
+  .mision h1,
+  .mision h3,
+  .mision p,
+  .adopta h1,
+  .adopta h3,
+  .adopta p {
+    padding: 0 120px;
+  }
+  .equipo h1 {
+    padding: 56px 178px;
+  }
   .nosotros section ul {
+    padding: 0 120px 56px;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
   }
@@ -392,8 +437,13 @@ p {
     align-items: center;
   }
   .donacion section ul {
+    padding: 56px 0 100px;
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
+  }
+  main .somos,
+  main .dona {
+    display: flex;
   }
 }
 footer {

@@ -68,7 +68,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 16px;
-    margin: 16px;
+    margin: 24px;
 
     nav ul {
       display: flex;
@@ -94,12 +94,35 @@
     }
   }
 
-  .home section ul {
-    grid-template-columns: repeat(4, 1fr);
+  .home section {
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+
+    ul {
+      grid-template-columns: repeat(4, 1fr);
+      align-items: center;
+    }
+  }
+
+  .historia,
+  .mision,
+  .adopta {
+    h1,
+    h3,
+    p {
+      padding: 0 120px;
+    }
+  }
+
+  .equipo {
+    h1 {
+      padding: 56px 178px;
+    }
   }
 
   .nosotros section ul {
+    padding: 0 120px 56px;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
   }
@@ -110,8 +133,18 @@
   }
 
   .donacion section ul {
+    padding: 56px 0 100px;
     grid-template-columns: repeat(4, 1fr);
-
     align-items: center;
   }
+
+
+main{
+  .somos,
+  .dona{
+    display: flex;
+  }
 }
+}
+
+

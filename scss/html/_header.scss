@@ -8,12 +8,36 @@ header {
   border: none;
 }
 
-.navbar-nav {
+.navbar-toggler:focus {
+  text-decoration: underline !important;
+  outline: 4px solid $primary-500 !important;
+  box-shadow: none !important;
+}
+
+.dropdown-menu {
+  padding: 8px;
+  min-width: 100px !important; 
+  margin-top: 0;
+  transform: translateY(-10%);
+}
+.dropdown-item {
   text-align: right;
   color: $neutral-900;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
+  padding: 8px;
+}
+
+.dropdown-item:hover {
+  background-color: $primary-100;
+}
+:root {
+  --bs-dropdown-min-width: unset;
+}
+
+.dropdown-menu {
+  --bs-dropdown-min-width: 8rem;
 }
 
 .navbar-brand img {

@@ -3,7 +3,8 @@
 main {
   background-color: $primary-100;
   text-align: left;
-  flex-wrap: wrap;
+ grid-template-columns: 1;
+  
 
   .banner {
     width: 100%;
@@ -11,7 +12,6 @@ main {
   }
 
   .somos {
-    display: flex;
     padding: 56px;
     gap: 32px;
     align-items: center;
@@ -41,7 +41,6 @@ main {
   }
 
   .dona {
-    display: flex;
     text-align: left;
     padding: 56px;
     gap: 32px;
@@ -56,5 +55,4 @@ p span {
 .donacion main {
   background-color: $primary-100;
   text-align: left;
-  flex-wrap: wrap;
 }
