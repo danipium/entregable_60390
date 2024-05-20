@@ -11,7 +11,7 @@
 
   li {
     margin: 16px;
-    
+
     button {
       color: #ffff;
       background-color: #d8742a;
@@ -33,7 +33,6 @@
 }
 
 .equipo {
-
   ul {
     text-align: center;
     background-color: $terciary-100;
@@ -43,15 +42,13 @@
   }
 
   h1 {
-    background-color: $terciary-100 ;
+    background-color: $terciary-100;
     text-align: left;
     padding: 56px;
     padding-bottom: 8px;
     margin-bottom: 0;
   }
 }
-
-
 
 li {
   list-style: none;
@@ -201,7 +198,6 @@ ul .perri12 {
 .info {
   flex-direction: column;
   margin: 24px 24px 48px;
-
 
   .info span {
     display: block;
